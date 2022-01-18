@@ -48,7 +48,7 @@ struct Args {
     ///
     /// こちらは、指定が0個の場合は `None` になる。
     #[clap(short, long)]
-    optional_multiple: Vec<String>,
+    optional_multiple: Option<Vec<String>>,
 
     /// 出現回数を数えるタイプのフラグ。
     ///

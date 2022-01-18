@@ -1,0 +1,19 @@
+[package]
+name = "clap-v3-samples"
+version = "1.0.0"
+edition = "2021"
+authors = ["Igaguri <igagurimk@gmail.com>"]
+description = "clap v3 のサンプルプログラム集"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = {version = "3.0.7", features = ["derive", "env"]}
+
+[[bin]]
+name = "struct"
+path = "src/bin/struct/main.rs"
+
+[[bin]]
+name = "subcommand"
+path = "src/bin/subcommand/main.rs"
